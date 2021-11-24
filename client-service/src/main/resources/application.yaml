@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    password: pg
+    url: "jdbc:postgresql://localhost:5432/client"
+    username: postgres
+
