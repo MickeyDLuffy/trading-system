@@ -1,0 +1,17 @@
+spring:
+  datasource:
+      url: "jdbc:postgresql://localhost:5432/trading"
+      username: postgres # Remote DB Credential = rouge_broker
+      password: postgres # Remote DB Credential = broker
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation : true
+        dialet: org.hibernate.dialect.PostgreSQLDialect
+        # Hibernate ddl auto (create, create-drop, validate, update)
+        ddl-auto: update
+
+  flyway:
+    schemas: trading
